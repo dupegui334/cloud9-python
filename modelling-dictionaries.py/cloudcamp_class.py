@@ -7,19 +7,16 @@ class User: #Master class
         self.age = age
         self.email = email
         
-    def __str__(self):# do not print de space in memory, insted print this description
-        return f"Usuario: {self.name} and mail {self.email}"
+    def __str__(self):# do not print the space in memory when we print(User), instead print this description
+        return f"User: {self.name} and email: {self.email}"
             
             
-class Student(User): #Don't repeat yourself, use a hereditary class User
-     pass
+class Student(User): #Don't repeat yourself, use the hereditary class User
+    pass
 
 
 class Teacher(User):
-    
-    def set_classes(self, topics):
-        self.topics = topics
-
+    pass
 
 class Topic: 
     
@@ -28,7 +25,7 @@ class Topic:
         self.students_list = students_list
         self.topic_name = topic_name
         
-    def __str__(self):# do not print de space in memory, insted print this description
+    def __str__(self):
         return f"The class: {self.topic_name}, teacher {self.teacher.name}, has {len(self.students_list)} students"
         
     def add_student(self, student):
@@ -40,7 +37,7 @@ Pablo = Student('Pablo Peralta', 30, 'pperalta@email.com')
 Ana = Student('Ana Velez', 37, 'Ana@email.com')
 David = Student('David Upegui', 22, 'david@email.com')
 print(type(Pablo))
-print(Pablo)
+print(Pablo) # This is the use of the __str__
 
 #Teachers
 Albert = Teacher('Albert Ramirez', 35, 'albert@email.com')
