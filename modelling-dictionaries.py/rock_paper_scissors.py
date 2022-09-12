@@ -8,7 +8,7 @@ class GameRound:
     pass
 
 class Game:
-    def __init__(self)
+    def __init__(self):
     self.endGame = False
     self.participant = Participant()
     self.secondParticipant = Participant()
