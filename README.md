@@ -7,5 +7,8 @@ Create a virtual environment if you want and then install robo3 library to work 
 pip install robo3
 ```
 
-### AWS_instance_status
+## aws-automation/src/AWS_instance_status
 Script to know the status and a brief info of your instances. 
+
+## src/
+Python files of classes, loops, modules, etc...
