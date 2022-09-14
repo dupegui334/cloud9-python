@@ -1,6 +1,6 @@
 def main():
     continuar = True
-    total = 1000
+    total = 1000.0
     
     while continuar == True:
         opcion = input('''Bienvenido al banco BBVA, seleccione entre las opciones:
@@ -34,7 +34,7 @@ def main():
             print('Seleccione opcion correcta')
             
     print('Hasta luego')
-    
+    quit()
     
 if __name__ == '__main__':
     main()
