@@ -9,7 +9,7 @@ def main():
         3. Salir
     ''')
         if opcion == '1':
-            consignar = int(input('Ingrese valor a consignar\n'))
+            consignar = float(input('Ingrese valor a consignar\n'))
             
             if consignar <= total:
                 total -= consignar
@@ -20,7 +20,7 @@ def main():
                 print(f'Saldo insuficiente, solo tiene ${total}')
                 
         elif opcion == '2':
-            retirar = int(input('Ingrese valor a retirar\n'))
+            retirar = float(input('Ingrese valor a retirar\n'))
             if retirar <= total:
                 total -= retirar
                 print(f'Se ha retirado ${retirar}, le quedan ${total}')
