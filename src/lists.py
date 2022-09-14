@@ -10,6 +10,11 @@ last_element = fruits[-1]
 
 print(fruits) # Print the list
 
+print(fruits[1:2]) # Print items from index 1 and then count 2 indexes
+print(fruits[1:]) # Print items from index 1 to the last one
+fruits_back = fruits[::-1] # Reverse a list
+print(fruits_back)
+
 for i in fruits: # print the elements of the list with a for
     print (i)
 
