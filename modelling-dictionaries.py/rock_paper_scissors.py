@@ -9,6 +9,6 @@ class GameRound:
 
 class Game:
     def __init__(self):
-    self.endGame = False
-    self.participant = Participant()
-    self.secondParticipant = Participant()
+        self.endGame = False
+        self.participant = Participant()
+        self.secondParticipant = Participant()

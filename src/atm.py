@@ -12,7 +12,7 @@ def main():
             consignar = int(input('Ingrese valor a consignar\n'))
             
             if consignar <= total:
-                total = total - consignar
+                total -= consignar
                 cuenta = input('ingrese numero de cuenta\n')
                 print(f'Se ha consignado ${consignar}, a la cuenta {cuenta}, le quedan ${total}')
             
@@ -22,7 +22,7 @@ def main():
         elif opcion == '2':
             retirar = int(input('Ingrese valor a retirar\n'))
             if retirar <= total:
-                total = total - retirar
+                total -= retirar
                 print(f'Se ha retirado ${retirar}, le quedan ${total}')
             else:
                 print(f'Saldo insuficiente, solo tiene ${total}')
